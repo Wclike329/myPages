@@ -1,4 +1,4 @@
-## Welcome to GitHub Pages
+## ONE小窝
 
 You can use the [editor on GitHub](https://github.com/Wclike329/myPages/edit/gh-pages/index.md) to maintain and preview the content for your website in Markdown files.
 

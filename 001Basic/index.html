@@ -5,20 +5,38 @@
 	<title>myPages</title>
 	<style type="text/css">
 		body{
-			background-image: url(./images/0.GIF);
+			background-color: MediumVioletRed;
 			background-size: 100% 100%;
 			height: 100%;
 		}
 		html{
-			height: 100%;
 			margin: 0;
 			padding: 0;
+		}
+		img{
+			background-position: top right;
+			height: 300px;
+			width: 400px;
+		}
+		.top{
+			color: gold;
+		}
+		#imag{
+			display: block;
+			position: fixed;
+			top: 0;
+			right: 0;
 		}
 	</style>
 </head>
 <body>
-	<h1>从零开始，做一个自己的网页。</h1>
-	<h2 align="center">我的个人随记</h2>
+	<div class="top">
+		<h1>从零开始</h1>
+	</div>
+	<div id="imag">
+		<img src="./images/0.GIF" />
+	</div>
+	<h1 align="center">个人随记</h1>
 </body>
 </html>
 

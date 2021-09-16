@@ -1,47 +1,203 @@
 <!DOCTYPE html>
 <html>
-<head>
-	<meta charset="utf-8">
-	<title>myPages</title>
-	<style type="text/css">
-		body{
-			background-color: MediumVioletRed;
-			background-size: 100% 100%;
-			height: 100%;
-		}
-		html{
-			margin: 0;
-			padding: 0;
-		}
-		img{
-			background-position: top right;
-			height: 300px;
-			width: 400px;
-		}
-		.top{
-			color: gold;
-		}
-		audio{
-			display: none;
-		}
-		#imag{
-			display: block;
-			position: fixed;
-			top: 0;
-			right: 0;
-		}
-	</style>
-</head>
-<body>
-	<div class="top">
-		<h1>从零开始</h1>
-	</div>
-	<div>
-		<audio src="musics/sosick.mp3" autoplay="autoplay" controls="controls" loop="loop" preload="auto"></audio>
-	</div>
-	<div id="imag">
-		<img src="./images/0.GIF" />
-	</div>
-	<h1 align="center">个人随记</h1>
-</body>
+	<head>
+		<meta charset="utf-8">
+		<title>myPages</title>
+		<style type="text/css">
+			body{
+				background-color: MediumVioletRed;
+				background-size: 100% 100%;
+				height: 100%;
+			}
+			html{
+				margin: 0;
+				padding: 0;
+			}
+			img{
+				background-position: top right;
+				height: 300px;
+				width: 400px;
+			}
+			.top{
+				color: gold;
+			}
+			audio{
+				display: none; 
+			}
+			#imag{
+				display: block;
+				position: fixed;
+				top: 0;
+				right: 0;
+			}
+			.message{
+				width: 600px;
+				height: 170px;
+				background: #fff;
+				margin: 100px auto 0;
+				border-radius: 10px;
+				padding: 5px 20px;
+				/*position: left;*/
+			}
+			.message p{
+				color: #666;
+				font-size: 15px;
+				line-height: 25px;
+			}
+			.message .text{
+				width: 600px;
+				height: 70px;
+				border: 1px solid #ddd;
+				margin-right: 10px;
+			}
+			.message .btn{
+				width: 600px;
+				height: 50px;
+				margin-top: 10px;
+				margin-top: 10px;
+			}
+			.message .btn .face-btn{
+				width: 30px;
+				height: 30px;
+				float: left;
+			}
+			.message .btn .mes-btn{
+				float: right;
+				background: #ff9933;
+				padding: 5px 20px;
+				border-radius: 5px;
+				font-size: 12px;
+				color: #fff;
+				cursor: pointer;
+			}
+			.message .btn ul{
+				width: 300px;
+				height: 200px;
+				background: #fff;
+				border: 1px solid #ddd;
+				position: absolute;
+				left: 320px;
+				top: 380px;
+				display: none;
+			}
+			.message .btn ul li{
+				list-style: none;
+				float: left;
+				margin: 2px;
+			}
+			.message .btn ul li img{
+				width: 30px;
+				height: 30px;
+			}
+			.main{
+				width: 640px;
+				margin: 0 auto;
+				margin-top: 20px;
+
+			}
+			.main .con{
+				width: 600px;
+				background: #fff;
+				padding: 0 20px;
+				margin-bottom: 20px;
+			}
+			.main .con .title{
+				border-bottom: 1px dotted #666;
+				padding: 10px 0;
+
+			}
+			.main .con .title img{
+				width: 50px;
+				height: 50px;
+				border-radius: 50%;
+
+			}
+			.main .con .content{
+				line-height: 30px;
+			}
+		</style>
+	</head>
+	<body>
+		<div class="top">
+			<h2>Start From Scratch</h2>
+		</div>
+		<div>
+			<audio src="images/sosick.mp3" autoplay="autoplay" controls="controls" loop="loop" preload="auto"></audio>
+		</div>
+		<div id="imag">
+			<img src="./images/0.GIF" />
+		</div>
+		<h1 align="center">随记</h1>
+		<div class="message">
+			<p>想说啥就说啥</p>
+			<div class="text" id="txt" contenteditable="true"></div>
+			<div class="btn">
+				<img class="face-btn" id="face-btn" src="images/1.GIF" />
+				<span class="mes-btn" id="mes-btn">发表</span>
+				<ul id="ul">
+					<li><img src="images/2.GIF" title="[孝了]"></li>
+					<li><img src="images/3.GIF" title="[晕了]"></li>
+					<li><img src="images/4.GIF" title="[牛哇]"></li>
+					<li><img src="images/5.GIF" title="[yue了]"></li>
+					<li><img src="images/6.GIF" title="[爱了]"></li>
+					<li><img src="images/7.GIF" title="[啊这]"></li>
+					<li><img src="images/8.GIF" title="[哈？]"></li>
+					<li><img src="images/9.GIF" title="[呜呜]"></li>
+					<li><img src="images/10.GIF" title="[嘴一个]"></li>
+					<li><img src="images/11.GIF" title="[亮了]"></li>
+					<li><img src="images/12.GIF" title="[nmsl]"></li>
+					<li><img src="images/13.GIF" title="[恶心]"></li>
+					<li><img src="images/14.GIF" title="[吐血]"></li>
+					<li><img src="images/15.GIF" title="[傻B]"></li>
+					<li><img src="images/16.GIF" title="[捂嘴]"></li>
+					<li><img src="images/17.GIF" title="[垃圾]"></li>
+					<li><img src="images/18.GIF" title="[送fa]"></li>
+					<li><img src="images/19.GIF" title="[炸死你]"></li>
+
+				</ul>
+			</div>
+		</div>
+		<div class="main" id="main">
+			<!--
+				<div class="con">
+					<div class="title">
+						<img src="images/ProfilePhoto.GIF" align="absmiddle" />匿
+					</div>
+					<div class="content">不知名小白</div>
+				</div>
+			-->
+		</div>
+		<script type="text/javascript">
+			//通过id名来获取元素对象
+			var	Txt = document.getElementById('txt');//文本框
+			var faceBtn = document.getElementById('face-btn');//表情按钮
+			var mesBtn = document.getElementById('mes-btn');//发表按钮
+			var Ul = document.getElementById('ul');//表情框
+			var Li = document.getElementsByTagName('li');
+			var Main = document.getElementById('main');//主体内容
+			mesBtn.onclick = function(){
+				var Tcon = Txt.innerHTML;//获取到结构内容
+				if(Tcon == ''){
+					alert('铁铁说句话吧～');
+					Txt.focus();//获取焦点
+				}else{
+					Main.innerHTML += '<div class="con"><div class="title"><img src="images/ProfilePhoto.GIF" align="absmiddle" />匿</div><div class="content">'+Tcon+'</div></div>';
+					Txt.innerHTML = '';
+				};
+			};
+			faceBtn.onclick = function(e){
+				e = e||event;
+				Ul.style.display = 'block';
+				e.cancelBubble = true;//阻止事件冒泡
+			};
+			document.onclick = function(){
+				Ul.style.display = 'none';
+			};
+			for (var i = 0; i < Li.length; i++) {
+				Li[i].onclick = function( ){
+					Txt.innerHTML = '<img src="'+this.children[0].src+'" >';
+				};
+			}
+		</script>
+	</body>
 </html>

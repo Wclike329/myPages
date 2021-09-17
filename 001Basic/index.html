@@ -115,6 +115,13 @@
 			.main .con .content{
 				line-height: 30px;
 			}
+
+			/* 这里是表情包样式，后面你可以用js操作css的时候，可以让表情包大小跟着你哪个框的大小变化，我看见你那个框的大小还是固定的 */
+			.img_expression{
+				width: 25px;
+				height: 25px;
+			}
+
 		</style>
 	</head>
 	<body>
@@ -195,7 +202,8 @@
 			};
 			for (var i = 0; i < Li.length; i++) {
 				Li[i].onclick = function( ){
-					Txt.innerHTML = '<img src="'+this.children[0].src+'" >';
+					Txt.innerHTML = '<img src="'+this.children[0].src+'" class="img_expression" />';
+					
 				};
 			}
 		</script>
